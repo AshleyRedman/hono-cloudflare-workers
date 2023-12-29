@@ -1,0 +1,6 @@
+name = "hono-cf"
+compatibility_date = "2023-01-01"
+
+[vars]
+STAGE = "DEV"
+API_ORIGIN = "http://localhost:8787"
