@@ -3,8 +3,8 @@ import { Body, PathParams, QueryParams } from './types';
 
 export const handler = async (event: Event) => {
     const body = event.req.bodyCache.json as Body;
-    const query = event.req.queries() as QueryParams;
-    const params = event.req.param() as PathParams;
+    const query = event.req.query('KEY');
+    const params = event.req.param('id');
 
     console.log({ body, query, params });
 
